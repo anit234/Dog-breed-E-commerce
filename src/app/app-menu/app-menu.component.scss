@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-container {
+    border-top: 1px solid #b595f7;
+    height: 10vh;
+    background-color: #712cf9;
+    color: white;
+    position: sticky; /* Fixes the menu bar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.main-part {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.left-part {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-left: auto;
+}
+
+.menu-list {
+  margin: 10px;
+}
+
+.menu-list a {
+    cursor: pointer;
+    color: white;
+    margin: 0 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.menu-list a:hover {
+    background-color: white;
+    color: #712cf9;
+    border: 1px solid #712cf9;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo-image {
+    width: 60px;
+    border: 1px solid transparent;
+    border-radius: 5vh;
+    height: 7vh;
+    margin-right: 10px;
+}
+
+.paw-title {
+    font-weight: 700;
+    margin: 0;
+}
+
+.content {
+    padding-top: 10vh; /* Adds padding to prevent content from being hidden under the fixed menu */
+    margin: 20px;
+}

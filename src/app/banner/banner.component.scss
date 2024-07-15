@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.banner-container{
+ position: relative;
+  display: inline-block;
+}
+
+.banner-container img {
+  width: 100%;
+  height: 50%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 0.05em;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.get-started-button{
+width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px; /* Ensures the text is vertically centered */
+  margin-top: 20px; 
+}
+.get-started-button:hover:hover{
+ background-color: #712cf9;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal; /* Reset line-height inside button */
+  text-transform: uppercase;
+  font-weight: 400;
+}

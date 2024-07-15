@@ -1,0 +1,34 @@
+<!-- <div class="card-container">
+    <div>
+        <div class="card">
+            <img [src]="dogData.photo" [alt]="dogData.breed" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Card Title 1</h2>
+                <p class="card-description">Description 1</p>
+            </div>
+        </div>
+    </div>
+
+</div> -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 mb-4" *ngFor="let dog of dogData">
+            <div class="card embossed-card position-relative" style="width: 18rem; ">
+                <i class="fas fa-heart heart-icon" (click)="onIconClick()"></i>
+                <img class="card-img-top fixed-size p-2" [src]="dog.photo" [alt]="dog.breed">
+                <div class="card-body">
+                    <h5 class="card-title">{{dog.breed}}</h5>
+                    <div class="card-text"><strong>Breed Type:</strong> {{dog.breedType}}</div>
+                    <div class="card-text"><strong>Intelligence Type:</strong> {{dog.intelligence}}</div>
+                    <div class="card-text"><strong>Status: </strong><span
+                            [ngStyle]="{color:dog.is_available ? 'green' : 'red',fontWeight:'700'}">{{dog.is_available ?
+                            'Available' :
+                            'Out of Stock'}}</span>
+                    </div>
+                    <div class="seperator"></div>
+                    <a href="#" class="btn more-details">Get More Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

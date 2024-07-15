@@ -1,0 +1,11 @@
+<h5 class="heading">Filter Your Breed</h5>
+<div class="container">
+    <input type="radio" name="filter" value="all" [(ngModel)]="selectedFilteredRadioButton"
+        (change)="onSelectedRadioButtonChange()" /> All ({{all}})
+    <input type="radio" class="ms-2" name="filter" value="true" [(ngModel)]="selectedFilteredRadioButton"
+        (change)="onSelectedRadioButtonChange()" />
+    Available ({{available}})
+    <input type="radio" class="ms-2" name="filter" value="false" [(ngModel)]="selectedFilteredRadioButton"
+        (change)="onSelectedRadioButtonChange()" /> Out
+    of Stock ({{outOfStock}})
+</div>

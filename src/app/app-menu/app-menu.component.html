@@ -1,0 +1,13 @@
+<div class="menu-container">
+    <div class="main-part">
+        <div class="left-part">
+            <img src="/assets/images/paw_shop.png" alt="logo" class="logo-image">
+            <div class="paw-title">{{title}}</div>
+        </div>
+        <div class="right-part">
+            <div class="menu-list" *ngFor="let menu of menuItems">
+                <a [href]="menu.link">{{menu.label}}</a>
+            </div>
+        </div>
+    </div>
+</div>

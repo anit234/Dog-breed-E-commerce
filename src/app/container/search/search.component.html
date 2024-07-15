@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="search">
+        <input type="text" placeholder="Search dog breed" #searchInput>
+        <button class="btn search-button" (click)="updateSearchText(searchInput)">Search</button>
+        <div>You have searched: {{searchedText}}</div>
+    </div>
+</div>

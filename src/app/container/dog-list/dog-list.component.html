@@ -1,0 +1,9 @@
+<div class="dog-list-container">
+    <app-filter [all]="totalDogCount" [available]="availableDogCount" [outOfStock]="notAvailable"
+        (selectedFilterRadioButtonChange)="onFilterchange($event)"></app-filter>
+    <div *ngFor="let dog of dogBreeds">
+        <app-all-dogs [dogData]="filteredDogBreeds"
+            *ngIf="searchedTextFromParent =='' || dog.breed.toLowerCase().includes(searchedTextFromParent.toLowerCase())"></app-all-dogs>
+    </div>
+
+</div>
